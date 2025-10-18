@@ -1,233 +1,228 @@
-# Mentor 24/7 - Plataforma de Tutoria Pessoal Baseada em IA
+🧠 Mentor 24/7 — Plataforma de Tutoria Pessoal Baseada em IA
 
-Uma plataforma web inovadora onde qualquer pessoa pode aprender tópicos complexos com um mentor de IA que adapta o plano de estudos em tempo real baseado no desempenho, estilo de aprendizagem e objetivos do usuário.
+Mentor 24/7 é uma plataforma web inovadora de educação personalizada com inteligência artificial, projetada para oferecer mentoria individual adaptativa em qualquer área do conhecimento.
+O sistema utiliza IA generativa e aprendizado adaptativo para criar currículos dinâmicos, avaliar respostas, identificar lacunas de conhecimento e gerar conteúdo personalizado para cada aluno — tudo em tempo real.
 
-## 🎯 O Problema que Resolve
+🔗 Deploy: https://marciogil.github.io/Mentor-24-7/
 
-A educação online tradicional (MOOCs, YouTube) é passiva. Você assiste a vídeos, mas se não entende um conceito, fica travado. Tutores humanos são caros e inacessíveis para a maioria.
+💻 Repositório: https://github.com/MarcioGil/Mentor-24-7.git
 
-**Mentor 24/7** resolve isso criando um tutor 1-para-1, acessível 24/7, que não apenas responde perguntas, mas **proativamente identifica suas fraquezas** e gera conteúdo (textos, exercícios, quizzes) especificamente para consertá-las antes de avançar.
+👤 Desenvolvedor: Márcio Gil
 
-## ✨ Funcionalidades Principais
+🎯 Problema que o Projeto Resolve
 
-### 🧠 Geração Inteligente de Currículo
-- Descreva seu objetivo de aprendizado (ex: "Python para Análise de Dados")
-- A IA cria um currículo completo e estruturado com módulos e dependências
-- Personalizado para seu nível: iniciante, intermediário ou avançado
+A maior parte da educação online é passiva. Plataformas como MOOCs e YouTube dependem do esforço individual do aluno para compreender conceitos complexos — e quando o aluno trava, não há suporte imediato ou personalizado.
 
-### 📚 Aprendizado Adaptativo
-- Cada módulo apresenta explicações claras seguidas de exercícios práticos
-- A IA avalia suas respostas em tempo real
-- Se você acerta: avança para o próximo módulo
-- Se você erra: a IA identifica o conceito mal compreendido e cria conteúdo de reforço
+Tutoria humana é eficaz, mas cara e inacessível para a maioria dos estudantes.
 
-### 🗺️ Mapa de Aprendizado Dinâmico
-- Visualize seu progresso em tempo real
-- Veja quais módulos você completou e o que vem a seguir
-- O caminho se ajusta automaticamente baseado no seu desempenho
+O Mentor 24/7 resolve isso com um mentor de IA disponível 24 horas por dia, que adapta o conteúdo ao ritmo, desempenho e estilo de aprendizado de cada usuário, como um tutor pessoal inteligente.
 
-### 📊 Dashboard de Progresso
-- Acompanhe suas estatísticas de aprendizado
-- Identifique seus pontos fortes e áreas que precisam de atenção
-- Histórico completo de exercícios e avaliações
+✨ Funcionalidades Principais
 
-## 🛠️ Tecnologias Utilizadas
+🧠 Geração Inteligente de Currículo
+A IA cria um plano de estudos estruturado a partir de um objetivo (ex: “Aprender Python para Análise de Dados”), ajustado ao nível do usuário.
 
-### Frontend
-- **React 19** - Framework UI moderno
-- **Tailwind CSS 4** - Estilização utilitária
-- **shadcn/ui** - Componentes UI de alta qualidade
-- **Wouter** - Roteamento leve
-- **tRPC** - Type-safe API calls
+📚 Aprendizado Adaptativo
+A IA avalia cada resposta e adapta o conteúdo:
 
-### Backend
-- **Express 4** - Servidor web
-- **tRPC 11** - API type-safe end-to-end
-- **Drizzle ORM** - Type-safe database queries
-- **MySQL/TiDB** - Banco de dados relacional
+Se o aluno acerta → avança
 
-### IA & Machine Learning
-- **OpenAI API** - Geração de currículo e conteúdo adaptativo
-- **Structured Outputs** - Respostas JSON validadas
-- **Prompt Engineering** - Avaliação inteligente de respostas
+Se erra → gera material de reforço
 
-### Autenticação
-- **Manus OAuth** - Sistema de autenticação integrado
-- **JWT** - Gerenciamento de sessões
+🗺️ Mapa de Aprendizado Dinâmico
+Mostra módulos concluídos, progresso e próximos passos — atualizando-se automaticamente conforme o desempenho.
 
-## 📁 Estrutura do Projeto
+📊 Dashboard de Progresso
+Exibe estatísticas, fraquezas identificadas, tempo de estudo e histórico de respostas.
 
-```
+🛠️ Tecnologias Utilizadas
+Frontend
+
+React 19 — Framework moderno e performático
+
+Tailwind CSS 4 — Estilização utilitária
+
+shadcn/ui — Componentes acessíveis e padronizados
+
+Wouter — Roteamento leve
+
+tRPC — Comunicação full-stack type-safe
+
+Backend
+
+Express 4 — Servidor web robusto
+
+tRPC 11 — API type-safe end-to-end
+
+Drizzle ORM — ORM moderno e tipado
+
+MySQL/TiDB — Banco de dados relacional escalável
+
+IA e Machine Learning
+
+OpenAI API — Geração de currículos e conteúdo
+
+Structured Outputs — Respostas em JSON validadas
+
+Prompt Engineering — Avaliação inteligente e personalizada
+
+Autenticação e Segurança
+
+Manus OAuth — Login seguro integrado
+
+JWT — Gerenciamento de sessões
+
+Zod — Validação rigorosa de dados
+
+TypeScript — Tipagem end-to-end
+
+📁 Estrutura do Projeto
 mentor-24-7/
 ├── client/                 # Frontend React
 │   ├── src/
-│   │   ├── pages/         # Páginas da aplicação
+│   │   ├── pages/          # Páginas principais
 │   │   │   ├── Home.tsx          # Landing page
-│   │   │   ├── CreatePath.tsx    # Criação de currículo
+│   │   │   ├── CreatePath.tsx    # Criação de currículos
 │   │   │   ├── Learn.tsx         # Interface de aprendizado
 │   │   │   ├── Dashboard.tsx     # Dashboard do usuário
 │   │   │   └── Explore.tsx       # Explorar cursos
-│   │   ├── components/    # Componentes reutilizáveis
-│   │   ├── lib/          # Configurações (tRPC, etc)
-│   │   └── App.tsx       # Rotas principais
+│   │   ├── components/           # Componentes reutilizáveis
+│   │   ├── lib/                  # Configurações e hooks (tRPC, etc.)
+│   │   └── App.tsx               # Roteamento principal
 │
 ├── server/                # Backend Express + tRPC
-│   ├── routers.ts        # Definição de todas as APIs
-│   ├── db.ts             # Helpers de banco de dados
-│   └── _core/            # Infraestrutura (auth, LLM, etc)
+│   ├── routers.ts         # Definição das APIs
+│   ├── db.ts              # Conexão e helpers de banco
+│   └── _core/             # Módulos de auth, IA, etc.
 │
-├── drizzle/              # Schema e migrações do banco
-│   └── schema.ts         # Definição das tabelas
+├── drizzle/               # Schema e migrações do banco
+│   └── schema.ts          # Definição de tabelas
 │
-└── shared/               # Tipos e constantes compartilhadas
-```
+└── shared/                # Tipos e constantes compartilhadas
 
-## 🗄️ Schema do Banco de Dados
+🗄️ Schema do Banco de Dados
 
-### `users`
-Gerenciamento de usuários e autenticação
+users → Autenticação e perfis
 
-### `learning_paths`
-Currículos mestres criados pela IA com estrutura de módulos
+learning_paths → Currículos estruturados gerados pela IA
 
-### `user_progress`
-Estado atual do aprendizado de cada usuário:
-- Módulo atual
-- Módulos completados
-- Fraquezas identificadas
-- Pontos fortes
+user_progress → Estado atual do aprendizado
 
-### `generated_content`
-Cache de conteúdo gerado pela IA (explicações, exercícios, conteúdo remedial)
+generated_content → Cache de explicações e exercícios
 
-### `exercise_submissions`
-Histórico de respostas dos usuários e avaliações da IA
+exercise_submissions → Histórico de respostas e avaliações
 
-## 🚀 Como Executar
+🚀 Como Executar o Projeto
+Pré-requisitos
 
-### Pré-requisitos
-- Node.js 22+
-- pnpm
-- Banco de dados MySQL/TiDB
+Node.js 22+
 
-### Instalação
+pnpm
 
-1. Clone o repositório:
-```bash
+Banco de dados MySQL ou TiDB
+
+Instalação
 git clone https://github.com/MarcioGil/Mentor-24-7.git
 cd Mentor-24-7
-```
-
-2. Instale as dependências:
-```bash
 pnpm install
-```
-
-3. Configure as variáveis de ambiente:
-```bash
-# As variáveis já estão configuradas automaticamente pela plataforma Manus
-# Incluindo: DATABASE_URL, JWT_SECRET, OAUTH_SERVER_URL, BUILT_IN_FORGE_API_KEY, etc.
-```
-
-4. Execute as migrações do banco de dados:
-```bash
 pnpm db:push
-```
-
-5. Inicie o servidor de desenvolvimento:
-```bash
 pnpm dev
-```
 
-6. Acesse a aplicação:
-```
-http://localhost:3000
-```
 
-## 🎓 Como Usar
+⚙️ As variáveis de ambiente (como DATABASE_URL, JWT_SECRET, OAUTH_SERVER_URL) são configuradas automaticamente pela plataforma Manus.
 
-### 1. Criar um Curso
-1. Faça login na plataforma
-2. Clique em "Começar a Aprender" ou "Criar Curso"
-3. Descreva seu objetivo de aprendizado
-4. Selecione seu nível (iniciante, intermediário, avançado)
-5. A IA gerará um currículo personalizado
+Acesse:
+👉 http://localhost:3000
 
-### 2. Aprender
-1. Leia a explicação do módulo atual
-2. Resolva o exercício prático
-3. Receba feedback instantâneo da IA
-4. Se errar, receba conteúdo de reforço personalizado
-5. Avance para o próximo módulo ao acertar
+🎓 Como Usar
 
-### 3. Acompanhar Progresso
-- Acesse o Dashboard para ver estatísticas
-- Visualize o mapa de aprendizado dinâmico
-- Identifique suas áreas fortes e fracas
+Crie um curso personalizado
 
-## 🧪 Arquitetura de IA
+Faça login
 
-### 1. Gerador de Currículo
-Prompt engineering para criar currículos estruturados em JSON com:
-- Módulos sequenciais
-- Dependências entre conceitos
-- Estimativa de tempo
-- Conceitos-chave
+Descreva seu objetivo de aprendizado
 
-### 2. Avaliador de Resposta
-Analisa respostas do usuário e identifica:
-- Correção da resposta
-- Conceito mal compreendido (se houver)
-- Nível de confiança da avaliação
-- Feedback construtivo
+Escolha o nível (iniciante, intermediário, avançado)
 
-### 3. Gerador de Conteúdo Adaptativo
-Cria conteúdo personalizado baseado em:
-- Fraquezas identificadas
-- Contexto do módulo original
-- Estilo de aprendizagem do usuário
+Aprenda com feedback inteligente
 
-## 🎨 Design
+Resolva exercícios
 
-- **Paleta de cores**: Gradiente azul-índigo-roxo
-- **Componentes**: shadcn/ui para consistência
-- **Responsivo**: Mobile-first design
-- **Acessibilidade**: Componentes acessíveis por padrão
+Receba feedback em tempo real
 
-## 📊 Métricas de Impacto
+Reforce conteúdos antes de avançar
 
-- **Personalização**: 100% do conteúdo adaptado ao usuário
-- **Disponibilidade**: 24/7 sem limitações
-- **Custo**: Gratuito vs tutores humanos (R$ 50-200/hora)
-- **Escalabilidade**: Ilimitado número de alunos simultâneos
+Acompanhe seu progresso
 
-## 🔒 Segurança
+Veja estatísticas e módulos concluídos
 
-- Autenticação OAuth integrada
-- Sessões JWT seguras
-- Validação de dados com Zod
-- Type-safety end-to-end com tRPC
+Identifique pontos fortes e fracos
 
-## 🚀 Próximos Passos
+🧪 Arquitetura de IA
+1. Gerador de Currículo
 
-- [ ] Suporte a múltiplos idiomas
-- [ ] Integração com código executável (para cursos de programação)
-- [ ] Sistema de gamificação (badges, streaks)
-- [ ] Comunidade e compartilhamento de cursos
-- [ ] Análise avançada de padrões de aprendizado
-- [ ] Suporte a conteúdo multimídia (vídeos, áudio)
+Cria currículos estruturados com módulos, dependências e tempo estimado via JSON.
 
-## 📝 Licença
+2. Avaliador de Respostas
 
-Este projeto foi desenvolvido como demonstração de tecnologia educacional com IA.
+Analisa a correção, identifica conceitos mal compreendidos e fornece feedback construtivo.
 
-## 👨‍💻 Desenvolvedor
+3. Gerador de Conteúdo Adaptativo
 
-**Márcio Gil**
-- GitHub: [@MarcioGil](https://github.com/MarcioGil)
-- Repositório: [Mentor-24-7](https://github.com/MarcioGil/Mentor-24-7)
+Produz explicações e exercícios personalizados conforme o desempenho do usuário.
 
----
+🎨 Design
 
-**Mentor 24/7** - Educação personalizada com inteligência artificial 🚀
+Paleta: gradiente azul → índigo → roxo
 
+Estilo: Mobile-first e responsivo
+
+Componentes: shadcn/ui
+
+Acessibilidade: compatível com WCAG
+
+📊 Métricas de Impacto
+Métrica	Valor
+Personalização	100% adaptada
+Disponibilidade	24h por dia
+Custo	Gratuito
+Escalabilidade	Ilimitada
+🔒 Segurança
+
+Autenticação OAuth segura
+
+Sessões via JWT
+
+Type-safety end-to-end
+
+Validação de entrada com Zod
+
+🚧 Próximos Passos
+
+🌍 Suporte multilíngue
+
+💻 Execução de código (para cursos de programação)
+
+🏆 Sistema de gamificação
+
+💬 Comunidade de aprendizado
+
+📈 Análise de padrões de desempenho
+
+🎥 Suporte a multimídia
+
+👥 Público-Alvo
+
+Estudantes autodidatas e universitários
+
+Profissionais em transição de carreira
+
+Escolas e instituições que desejam mentoria personalizada em larga escala
+
+Empresas que buscam treinamentos adaptativos corporativos
+
+📝 Licença
+
+Projeto de demonstração educacional desenvolvido por Márcio Gil —
+Estudante de Engenharia de Software e Embaixador DIO Campus Expert.
+Todos os direitos reservados © 2025.
