@@ -126,9 +126,9 @@ pnpm db:push
 pnpm dev
 ```
 
-As variáveis de ambiente (`DATABASE_URL`, `JWT_SECRET`, `OAUTH_SERVER_URL`, etc.) são configuradas automaticamente pela plataforma **Manus**.
+As variáveis de ambiente (`DATABASE_URL`, `JWT_SECRET`, `OAUTH_SERVER_URL`, etc.) são configuradas automaticamente pela **IA**.
 
-Acesse: 👉 [http://localhost:3000](http://localhost:3000)
+Acesse: 👉 (https://mentor247-hwsnwhcn.manus.space/)
 
 ---
 
