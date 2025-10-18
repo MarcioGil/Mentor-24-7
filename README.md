@@ -80,6 +80,7 @@ TypeScript — Tipagem end-to-end
 
 📁 Estrutura do Projeto
 mentor-24-7/
+'''
 ├── `client/`                 # Frontend React
 │   ├── `src/`
 │   │   ├── `pages/`          # Páginas principais
@@ -101,7 +102,7 @@ mentor-24-7/
 │   └── `schema.ts`          # Definição de tabelas
 │
 └── `shared/`                # Tipos e constantes compartilhadas
-
+'''
 Observações:
 
 Usei o bloco de código com plaintext para preservar alinhamento e formatação no GitHub.
