@@ -4,9 +4,7 @@ Mentor 24/7 é uma plataforma web inovadora de educação personalizada com inte
 O sistema utiliza IA generativa e aprendizado adaptativo para criar currículos dinâmicos, avaliar respostas, identificar lacunas de conhecimento e gerar conteúdo personalizado para cada aluno — tudo em tempo real.
 
 🔗 Deploy: https://marciogil.github.io/Mentor-24-7/
-
 💻 Repositório: https://github.com/MarcioGil/Mentor-24-7.git
-
 👤 Desenvolvedor: Márcio Gil
 
 🎯 Problema que o Projeto Resolve
@@ -20,9 +18,11 @@ O Mentor 24/7 resolve isso com um mentor de IA disponível 24 horas por dia, que
 ✨ Funcionalidades Principais
 
 🧠 Geração Inteligente de Currículo
-A IA cria um plano de estudos estruturado a partir de um objetivo (ex: “Aprender Python para Análise de Dados”), ajustado ao nível do usuário.
+
+A IA cria um plano de estudos estruturado a partir de um objetivo (ex: "Aprender Python para Análise de Dados"), ajustado ao nível do usuário.
 
 📚 Aprendizado Adaptativo
+
 A IA avalia cada resposta e adapta o conteúdo:
 
 Se o aluno acerta → avança
@@ -30,9 +30,11 @@ Se o aluno acerta → avança
 Se erra → gera material de reforço
 
 🗺️ Mapa de Aprendizado Dinâmico
+
 Mostra módulos concluídos, progresso e próximos passos — atualizando-se automaticamente conforme o desempenho.
 
 📊 Dashboard de Progresso
+
 Exibe estatísticas, fraquezas identificadas, tempo de estudo e histórico de respostas.
 
 🛠️ Tecnologias Utilizadas
@@ -78,27 +80,33 @@ TypeScript — Tipagem end-to-end
 
 📁 Estrutura do Projeto
 mentor-24-7/
-├── client/                 # Frontend React
-│   ├── src/
-│   │   ├── pages/          # Páginas principais
-│   │   │   ├── Home.tsx          # Landing page
-│   │   │   ├── CreatePath.tsx    # Criação de currículos
-│   │   │   ├── Learn.tsx         # Interface de aprendizado
-│   │   │   ├── Dashboard.tsx     # Dashboard do usuário
-│   │   │   └── Explore.tsx       # Explorar cursos
-│   │   ├── components/           # Componentes reutilizáveis
-│   │   ├── lib/                  # Configurações e hooks (tRPC, etc.)
-│   │   └── App.tsx               # Roteamento principal
+├── `client/`                 # Frontend React
+│   ├── `src/`
+│   │   ├── `pages/`          # Páginas principais
+│   │   │   ├── `Home.tsx`          # Landing page
+│   │   │   ├── `CreatePath.tsx`    # Criação de currículos
+│   │   │   ├── `Learn.tsx`         # Interface de aprendizado
+│   │   │   ├── `Dashboard.tsx`     # Dashboard do usuário
+│   │   │   └── `Explore.tsx`       # Explorar cursos
+│   │   ├── `components/`           # Componentes reutilizáveis
+│   │   ├── `lib/`                  # Configurações e hooks (tRPC, etc.)
+│   │   └── `App.tsx`               # Roteamento principal
 │
-├── server/                # Backend Express + tRPC
-│   ├── routers.ts         # Definição das APIs
-│   ├── db.ts              # Conexão e helpers de banco
-│   └── _core/             # Módulos de auth, IA, etc.
+├── `server/`                # Backend Express + tRPC
+│   ├── `routers.ts`         # Definição das APIs
+│   ├── `db.ts`              # Conexão e helpers de banco
+│   └── `_core/`             # Módulos de auth, IA, etc.
 │
-├── drizzle/               # Schema e migrações do banco
-│   └── schema.ts          # Definição de tabelas
+├── `drizzle/`               # Schema e migrações do banco
+│   └── `schema.ts`          # Definição de tabelas
 │
-└── shared/                # Tipos e constantes compartilhadas
+└── `shared/`                # Tipos e constantes compartilhadas
+
+Observações:
+
+Usei o bloco de código com plaintext para preservar alinhamento e formatação no GitHub.
+
+Todos os nomes de pastas e arquivos estão entre crases para facilitar leitura em visualizações rápidas.
 
 🗄️ Schema do Banco de Dados
 
@@ -127,7 +135,6 @@ cd Mentor-24-7
 pnpm install
 pnpm db:push
 pnpm dev
-
 
 ⚙️ As variáveis de ambiente (como DATABASE_URL, JWT_SECRET, OAUTH_SERVER_URL) são configuradas automaticamente pela plataforma Manus.
 
